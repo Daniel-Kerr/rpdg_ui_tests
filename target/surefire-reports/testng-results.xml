@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="23960" started-at="2017-05-30T20:46:21Z" finished-at="2017-05-30T20:46:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="23960" started-at="2017-05-30T20:46:21Z" finished-at="2017-05-30T20:46:45Z">
+      <class name="localhost.testing.BasicNavigation">
+        <test-method status="PASS" signature="setup()[pri:0, instance:localhost.testing.BasicNavigation@6b2fad11]" name="setup" is-config="true" duration-ms="4733" started-at="2017-05-30T13:46:21Z" finished-at="2017-05-30T13:46:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="statusLinks()[pri:0, instance:localhost.testing.BasicNavigation@6b2fad11]" name="statusLinks" duration-ms="4570" started-at="2017-05-30T13:46:26Z" finished-at="2017-05-30T13:46:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLinks -->
+        <test-method status="PASS" signature="configurationLinks()[pri:1, instance:localhost.testing.BasicNavigation@6b2fad11]" name="configurationLinks" duration-ms="5391" started-at="2017-05-30T13:46:31Z" finished-at="2017-05-30T13:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurationLinks -->
+        <test-method status="PASS" signature="overrideLinks()[pri:2, instance:localhost.testing.BasicNavigation@6b2fad11]" name="overrideLinks" duration-ms="3475" started-at="2017-05-30T13:46:36Z" finished-at="2017-05-30T13:46:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- overrideLinks -->
+        <test-method status="PASS" signature="scheduleLinks()[pri:3, instance:localhost.testing.BasicNavigation@6b2fad11]" name="scheduleLinks" duration-ms="2470" started-at="2017-05-30T13:46:40Z" finished-at="2017-05-30T13:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scheduleLinks -->
+        <test-method status="PASS" signature="groupsLinks()[pri:4, instance:localhost.testing.BasicNavigation@6b2fad11]" name="groupsLinks" duration-ms="1463" started-at="2017-05-30T13:46:42Z" finished-at="2017-05-30T13:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupsLinks -->
+        <test-method status="PASS" signature="scenelistsLinks()[pri:5, instance:localhost.testing.BasicNavigation@6b2fad11]" name="scenelistsLinks" duration-ms="909" started-at="2017-05-30T13:46:44Z" finished-at="2017-05-30T13:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenelistsLinks -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:localhost.testing.BasicNavigation@6b2fad11]" name="closeBrowser" is-config="true" duration-ms="929" started-at="2017-05-30T13:46:44Z" finished-at="2017-05-30T13:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- localhost.testing.BasicNavigation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
