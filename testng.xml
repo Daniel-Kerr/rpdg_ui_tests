@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="localhost.testing.BasicNavigation"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="rPDG UI Suite" verbose="2" parallel="none"
+	group-by-instances="true" preserve-order="true" thread-count="1">
+	<test name="Basic Navigation">
+		<classes> 
+			<class name="localhost.testing.BasicNavigation" />
+		</classes>
+	</test> <!-- Test -->
+	<!-- <test name="Link Validation">
+		<classes> 
+			<class name="localhost.testing.LinkValidation" />
+		</classes>
+	</test> Test -->
+	<test name="Max Outputs">
+		<classes>
+			<class name="localhost.testing.MaxOutputs" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Multiple Inputs">
+		<classes>
+			<class name="localhost.testing.MultiInputs" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Create Groups">
+		<classes>
+			<class name="localhost.testing.CreateGroups" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Create Scenes">
+		<classes>
+			<class name="localhost.testing.CreateScenes" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Multiple Outputs">
+		<classes>
+			<class name="localhost.testing.MultiOutputs" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Create Schedule">
+		<classes>
+			<class name="localhost.testing.CreateSchedule" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Error Validation">
+		<classes>
+			<class name="localhost.testing.ErrorValidation" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="WallStation">
+		<classes>
+			<class name="localhost.testing.WallStation" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->

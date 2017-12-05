@@ -1,0 +1,4030 @@
+# Created on 2017-10-31T13:53:20.731
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2017-10-31T13:53:23.513
+Unexpected IOException with stream: Oct 31, 2017 1:53:23 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.cssSelector: button.btn.btn-primary)
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.03 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '10.0.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir8292_23112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2371ae7b99aa4732142622c4a501d00a
+*** Element info: {Using=css selector, value=button.btn.btn-primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:505)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.MultiInputs.clearGroupAll(MultiInputs.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-10-31T13:53:23.524
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.03 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '10.0.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir8292_23112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2371ae7b99aa4732142622c4a501d00a
+*** Element info: {Using=css selector, value=button.btn.btn-primary}
+
+# Created on 2017-10-31T13:53:23.531
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.538
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2017-10-31T13:53:23.545
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.551
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:23.557
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.564
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-10-31T13:53:23.570
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.578
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-10-31T13:53:23.584
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.591
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-10-31T13:53:23.597
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.603
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-10-31T13:53:23.609
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.615
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-10-31T13:53:23.622
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.629
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+
+# Created on 2017-10-31T13:53:23.636
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.642
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:505)
+
+# Created on 2017-10-31T13:53:23.648
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.654
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+
+# Created on 2017-10-31T13:53:23.660
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.667
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+
+# Created on 2017-10-31T13:53:23.672
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.679
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+
+# Created on 2017-10-31T13:53:23.686
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.692
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+
+# Created on 2017-10-31T13:53:23.698
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.705
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+
+# Created on 2017-10-31T13:53:23.711
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.717
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+
+# Created on 2017-10-31T13:53:23.724
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.730
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+
+# Created on 2017-10-31T13:53:23.736
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.742
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+
+# Created on 2017-10-31T13:53:23.749
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.755
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+
+# Created on 2017-10-31T13:53:23.761
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.768
+Unexpected IOException with stream: 	at localhost.testing.MultiInputs.clearGroupAll(MultiInputs.java:169)
+
+# Created on 2017-10-31T13:53:23.776
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.783
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:23.790
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.796
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:23.802
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.808
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:23.814
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.820
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:23.826
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.831
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:23.836
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.841
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:23.847
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.852
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:23.857
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.862
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:23.867
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.872
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:23.877
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.882
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:23.887
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.893
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:23.898
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.903
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:23.908
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.913
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:23.918
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.923
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:23.929
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.934
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:23.939
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.944
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:23.950
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.955
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:23.960
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.965
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:23.971
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.977
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:23.983
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.989
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:23.994
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:23.998
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:24.004
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.009
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:24.014
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.019
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:24.024
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.029
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:24.035
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.041
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:24.048
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.055
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:24.061
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.067
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:24.073
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.080
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:24.086
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:24.092
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:24.099
+Unexpected IOException: 6,1,localhost.testing.MultiInputs,clearGroupAll(localhost.testing.MultiInputs),null,null,null
+
+
+# Created on 2017-10-31T13:53:24.916
+Unexpected IOException with stream: S
+
+# Created on 2017-10-31T13:53:24.923
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:24.930
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:24.936
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:24.943
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:24.949
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:24.955
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:24.962
+Unexpected IOException with stream: g
+
+# Created on 2017-10-31T13:53:24.968
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:24.975
+Unexpected IOException with stream: C
+
+# Created on 2017-10-31T13:53:24.981
+Unexpected IOException with stream: h
+
+# Created on 2017-10-31T13:53:24.987
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:24.993
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:24.999
+Unexpected IOException with stream: m
+
+# Created on 2017-10-31T13:53:25.007
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:25.014
+Unexpected IOException with stream: D
+
+# Created on 2017-10-31T13:53:25.022
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:25.028
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:25.035
+Unexpected IOException with stream: v
+
+# Created on 2017-10-31T13:53:25.041
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:25.047
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:25.054
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.060
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:25.067
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:25.073
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:25.079
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:25.085
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:25.092
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.098
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:25.104
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:25.109
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:25.115
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:25.121
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:25.126
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.133
+Unexpected IOException with stream: (
+
+# Created on 2017-10-31T13:53:25.139
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:25.145
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:25.150
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:25.155
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:25.160
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:25.165
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.171
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:25.176
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:25.181
+Unexpected IOException with stream: d
+
+# Created on 2017-10-31T13:53:25.186
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:25.191
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:25.196
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:25.201
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.206
+Unexpected IOException with stream: 9
+
+# Created on 2017-10-31T13:53:25.213
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:25.218
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.224
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:25.229
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:25.234
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:25.239
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:25.244
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.249
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:25.254
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:25.259
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:25.264
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:25.271
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:25.276
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:25.281
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:25.286
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:25.291
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:25.296
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:25.301
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.306
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:25.312
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:25.331
+Unexpected IOException with stream: b
+
+# Created on 2017-10-31T13:53:25.338
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:25.343
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:25.348
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:25.353
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.358
+Unexpected IOException with stream: b
+
+# Created on 2017-10-31T13:53:25.363
+Unexpected IOException with stream: )
+
+# Created on 2017-10-31T13:53:25.368
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.373
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:25.378
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:25.383
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.388
+Unexpected IOException with stream: p
+
+# Created on 2017-10-31T13:53:25.396
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:25.402
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:25.408
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:25.415
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.422
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:25.430
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:25.436
+Unexpected IOException with stream: 9
+
+# Created on 2017-10-31T13:53:25.442
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:25.449
+Unexpected IOException with stream: 
+
+# Created on 2017-10-31T13:53:25.456
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:25.462
+Unexpected IOException with stream: O
+
+# Created on 2017-10-31T13:53:25.473
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:25.480
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:25.488
+Unexpected IOException with stream: y
+
+# Created on 2017-10-31T13:53:25.495
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.501
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:25.509
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:25.517
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:25.524
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:25.531
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:25.538
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.544
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:25.549
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:25.554
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:25.561
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:25.569
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:25.585
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:25.595
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:25.601
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:25.623
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:25.642
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:25.653
+Unexpected IOException with stream: s
+
+# Created on 2017-10-31T13:53:25.671
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.714
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:25.734
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:25.773
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:25.811
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:25.828
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:25.839
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:25.852
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:25.865
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:25.881
+Unexpected IOException with stream: w
+
+# Created on 2017-10-31T13:53:25.890
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:25.900
+Unexpected IOException with stream: d
+
+# Created on 2017-10-31T13:53:25.907
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:25.917
+Unexpected IOException with stream: 
+
+# Created on 2017-10-31T13:53:25.931
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:26.856
+Unexpected IOException with stream: Oct 31, 2017 1:53:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+
+# Created on 2017-10-31T13:53:30.966
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.03 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '10.0.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir8940_3916}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3376a94b121bf7d49256eccbda9a9b97
+
+# Created on 2017-10-31T13:53:30.975
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:30.983
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2017-10-31T13:53:30.989
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:30.994
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:30.999
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.004
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-10-31T13:53:31.009
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.015
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-10-31T13:53:31.020
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.025
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-10-31T13:53:31.030
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.035
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-10-31T13:53:31.040
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.046
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-10-31T13:53:31.052
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.058
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+
+# Created on 2017-10-31T13:53:31.065
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.072
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:925)
+
+# Created on 2017-10-31T13:53:31.080
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.087
+Unexpected IOException with stream: 	at localhost.testing.Driver.buildDriver(Driver.java:19)
+
+# Created on 2017-10-31T13:53:31.094
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.102
+Unexpected IOException with stream: 	at localhost.testing.CreateGroups.setup(CreateGroups.java:20)
+
+# Created on 2017-10-31T13:53:31.109
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.117
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:31.124
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.131
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:31.139
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.146
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:31.153
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.162
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:31.169
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.176
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:31.183
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.190
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+
+# Created on 2017-10-31T13:53:31.197
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.204
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+
+# Created on 2017-10-31T13:53:31.211
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.218
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+
+# Created on 2017-10-31T13:53:31.225
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.232
+Unexpected IOException with stream: 	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+
+# Created on 2017-10-31T13:53:31.240
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.247
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:602)
+
+# Created on 2017-10-31T13:53:31.253
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.260
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:31.267
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.274
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:31.281
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.288
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:31.295
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.301
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:31.307
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.312
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:31.317
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.322
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:31.327
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.332
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:31.337
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.342
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:31.347
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.352
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:31.359
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.364
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:31.370
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.375
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:31.380
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.385
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:31.391
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.397
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:31.404
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.410
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:31.416
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.422
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:31.428
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.435
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:31.443
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.450
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:31.458
+Unexpected IOException: 5,1,localhost.testing.CreateGroups,addWiredFixtures(localhost.testing.CreateGroups),localhost.testing.CreateGroups,null,null
+
+
+# Created on 2017-10-31T13:53:31.466
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:31.475
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.482
+Unexpected IOException with stream: 	at localhost.testing.CreateGroups.addWiredFixtures(CreateGroups.java:27)
+
+# Created on 2017-10-31T13:53:31.490
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.497
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:31.503
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.509
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:31.516
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.522
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:31.528
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.534
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:31.540
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.546
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:31.552
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.560
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:31.567
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.573
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:31.579
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.585
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:31.591
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.597
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:31.603
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.609
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:31.614
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.619
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:31.625
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.630
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:31.635
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.640
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:31.645
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.650
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:31.655
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.660
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:31.665
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.670
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:31.677
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.683
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:31.689
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.694
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:31.699
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.704
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:31.709
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.715
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:31.720
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.725
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:31.730
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.736
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:31.740
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.745
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:31.751
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.756
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:31.764
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.771
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:31.777
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.783
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:31.789
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.796
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:31.803
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.809
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:31.815
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.821
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:31.827
+Unexpected IOException: 6,1,localhost.testing.CreateGroups,addWiredFixtures(localhost.testing.CreateGroups),null,null,null
+
+
+# Created on 2017-10-31T13:53:31.834
+Unexpected IOException: 5,1,localhost.testing.CreateGroups,createAllGroups(localhost.testing.CreateGroups),localhost.testing.CreateGroups,null,null
+
+
+# Created on 2017-10-31T13:53:31.846
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:31.853
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.859
+Unexpected IOException with stream: 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+
+# Created on 2017-10-31T13:53:31.865
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.871
+Unexpected IOException with stream: 	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:68)
+
+# Created on 2017-10-31T13:53:31.878
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.884
+Unexpected IOException with stream: 	at localhost.testing.CreateGroups.createAllGroups(CreateGroups.java:53)
+
+# Created on 2017-10-31T13:53:31.890
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.896
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:31.903
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.913
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:31.919
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.926
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:31.932
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.938
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:31.944
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.950
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:31.956
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.964
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:31.971
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.977
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:31.982
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.987
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:31.992
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:31.997
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:32.002
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.008
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:32.013
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.018
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:32.023
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.028
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:32.033
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.038
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:32.044
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.049
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:32.054
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.059
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:32.064
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.069
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:32.074
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.079
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:32.084
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.089
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:32.095
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.099
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:32.104
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.109
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:32.115
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.120
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:32.125
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.131
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:32.136
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.141
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:32.146
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.151
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:32.157
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.166
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:32.172
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.179
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:32.184
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.191
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:32.197
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.203
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:32.209
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.216
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:32.222
+Unexpected IOException: 6,1,localhost.testing.CreateGroups,createAllGroups(localhost.testing.CreateGroups),null,null,null
+
+
+# Created on 2017-10-31T13:53:32.228
+Unexpected IOException: 5,1,localhost.testing.CreateGroups,clearAllGroups(localhost.testing.CreateGroups),localhost.testing.CreateGroups,null,null
+
+
+# Created on 2017-10-31T13:53:32.234
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:32.241
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.247
+Unexpected IOException with stream: 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+
+# Created on 2017-10-31T13:53:32.253
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.260
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
+
+# Created on 2017-10-31T13:53:32.266
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.272
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:71)
+
+# Created on 2017-10-31T13:53:32.278
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.284
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+
+# Created on 2017-10-31T13:53:32.292
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.299
+Unexpected IOException with stream: 	at localhost.testing.CreateGroups.clearAllGroups(CreateGroups.java:153)
+
+# Created on 2017-10-31T13:53:32.306
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.312
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:32.318
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.324
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:32.330
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.336
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:32.342
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.348
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:32.354
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.360
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:32.367
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.373
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:32.379
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.384
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:32.389
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.394
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:32.399
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.404
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:32.409
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.414
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:32.419
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.424
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:32.429
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.434
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:32.440
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.445
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:32.450
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.455
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:32.460
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.465
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:32.470
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.475
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:32.480
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.485
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:32.490
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.496
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:32.501
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.506
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:32.511
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.516
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:32.521
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.527
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:32.532
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.537
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:32.542
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.547
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:32.552
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.557
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:32.566
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.573
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:32.580
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.587
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:32.593
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.599
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:32.606
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.612
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:32.618
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.624
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:32.630
+Unexpected IOException: 6,1,localhost.testing.CreateGroups,clearAllGroups(localhost.testing.CreateGroups),null,null,null
+
+
+# Created on 2017-10-31T13:53:32.637
+Unexpected IOException: 5,1,localhost.testing.CreateGroups,deleteAllFixtures(localhost.testing.CreateGroups),localhost.testing.CreateGroups,null,null
+
+
+# Created on 2017-10-31T13:53:32.644
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:32.650
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.656
+Unexpected IOException with stream: 	at localhost.testing.CreateGroups.deleteAllFixtures(CreateGroups.java:176)
+
+# Created on 2017-10-31T13:53:32.663
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.669
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:32.675
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.682
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:32.689
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.696
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:32.702
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.708
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:32.714
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.721
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:32.727
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.733
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:32.739
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.745
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:32.751
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.757
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:32.763
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.771
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:32.777
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.782
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:32.787
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.792
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:32.796
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.802
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:32.807
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.812
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:32.817
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.823
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:32.828
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.833
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:32.838
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.843
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:32.848
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.853
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:32.858
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.863
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:32.867
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.872
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:32.877
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.882
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:32.888
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.893
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:32.898
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.903
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:32.908
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.913
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:32.919
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.926
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:32.934
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.942
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:32.950
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.961
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:32.967
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.974
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:32.983
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:32.989
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:32.995
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:33.002
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:33.008
+Unexpected IOException: 6,1,localhost.testing.CreateGroups,deleteAllFixtures(localhost.testing.CreateGroups),null,null,null
+
+
+# Created on 2017-10-31T13:53:33.021
+Unexpected IOException: 8,1,localhost.testing.CreateGroups,closeBrowser(localhost.testing.CreateGroups),null,null,null,null,CreateGroups.closeBrowser:203 NullPointer,java.lang.NullPointerException\000A\0009at localhost.testing.CreateGroups.closeBrowser(CreateGroups.java:203)\000A
+
+
+# Created on 2017-10-31T13:53:33.089
+Unexpected IOException with stream: S
+
+# Created on 2017-10-31T13:53:33.097
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:33.103
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:33.110
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:33.116
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:33.122
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:33.128
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:33.135
+Unexpected IOException with stream: g
+
+# Created on 2017-10-31T13:53:33.141
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.147
+Unexpected IOException with stream: C
+
+# Created on 2017-10-31T13:53:33.153
+Unexpected IOException with stream: h
+
+# Created on 2017-10-31T13:53:33.159
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:33.165
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.171
+Unexpected IOException with stream: m
+
+# Created on 2017-10-31T13:53:33.177
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:33.184
+Unexpected IOException with stream: D
+
+# Created on 2017-10-31T13:53:33.192
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:33.198
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:33.204
+Unexpected IOException with stream: v
+
+# Created on 2017-10-31T13:53:33.210
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:33.217
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:33.223
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.229
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:33.235
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:33.240
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:33.247
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:33.253
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:33.260
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.265
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:33.270
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:33.275
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:33.280
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:33.285
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:33.290
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.295
+Unexpected IOException with stream: (
+
+# Created on 2017-10-31T13:53:33.300
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:33.305
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:33.310
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:33.315
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:33.320
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:33.325
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.330
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:33.335
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:33.340
+Unexpected IOException with stream: d
+
+# Created on 2017-10-31T13:53:33.345
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:33.350
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:33.355
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:33.361
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.366
+Unexpected IOException with stream: 9
+
+# Created on 2017-10-31T13:53:33.371
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:33.377
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.383
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:33.390
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:33.396
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:33.401
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:33.406
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.411
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:33.417
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:33.422
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:33.427
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.432
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:33.438
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:33.443
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.449
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.454
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:33.458
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:33.464
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.468
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:33.473
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:33.479
+Unexpected IOException with stream: b
+
+# Created on 2017-10-31T13:53:33.484
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.489
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:33.494
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:33.499
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.504
+Unexpected IOException with stream: b
+
+# Created on 2017-10-31T13:53:33.509
+Unexpected IOException with stream: )
+
+# Created on 2017-10-31T13:53:33.514
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.519
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.524
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:33.529
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.534
+Unexpected IOException with stream: p
+
+# Created on 2017-10-31T13:53:33.539
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.544
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:33.549
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:33.554
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.559
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.564
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.571
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:33.579
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:33.585
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:33.593
+Unexpected IOException with stream: 
+
+# Created on 2017-10-31T13:53:33.601
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:33.611
+Unexpected IOException with stream: O
+
+# Created on 2017-10-31T13:53:33.618
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:33.625
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:33.632
+Unexpected IOException with stream: y
+
+# Created on 2017-10-31T13:53:33.638
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.646
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:33.653
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.660
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:33.668
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:33.674
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:33.680
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.690
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:33.699
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.706
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:33.713
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:33.719
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:33.724
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:33.730
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:33.736
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:33.742
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.752
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:33.773
+Unexpected IOException with stream: s
+
+# Created on 2017-10-31T13:53:33.781
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.791
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:33.812
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:33.827
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:33.842
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:33.853
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:33.866
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:33.906
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:33.964
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:33.981
+Unexpected IOException with stream: w
+
+# Created on 2017-10-31T13:53:34.000
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:34.013
+Unexpected IOException with stream: d
+
+# Created on 2017-10-31T13:53:34.034
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:34.044
+Unexpected IOException with stream: 
+
+# Created on 2017-10-31T13:53:34.053
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:35.037
+Unexpected IOException with stream: Oct 31, 2017 1:53:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+
+# Created on 2017-10-31T13:53:39.237
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.06 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '10.0.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11940_8123}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8b2b22cf0f7395d066005b0bba4fcbeb
+
+# Created on 2017-10-31T13:53:39.248
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.257
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2017-10-31T13:53:39.265
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.270
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:39.275
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.280
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-10-31T13:53:39.285
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.290
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-10-31T13:53:39.295
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.302
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-10-31T13:53:39.309
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.316
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-10-31T13:53:39.321
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.326
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-10-31T13:53:39.332
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.338
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+
+# Created on 2017-10-31T13:53:39.345
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.352
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:925)
+
+# Created on 2017-10-31T13:53:39.359
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.366
+Unexpected IOException with stream: 	at localhost.testing.Driver.buildDriver(Driver.java:19)
+
+# Created on 2017-10-31T13:53:39.375
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.383
+Unexpected IOException with stream: 	at localhost.testing.CreateScenes.setup(CreateScenes.java:20)
+
+# Created on 2017-10-31T13:53:39.390
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.396
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:39.403
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.410
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:39.417
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.424
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:39.431
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.438
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:39.445
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.453
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:39.460
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.467
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+
+# Created on 2017-10-31T13:53:39.474
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.481
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+
+# Created on 2017-10-31T13:53:39.488
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.495
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+
+# Created on 2017-10-31T13:53:39.504
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.511
+Unexpected IOException with stream: 	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+
+# Created on 2017-10-31T13:53:39.518
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.526
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:602)
+
+# Created on 2017-10-31T13:53:39.533
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.539
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:39.546
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.553
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:39.560
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.567
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:39.573
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.579
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:39.584
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.589
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:39.594
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.599
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:39.604
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.609
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:39.614
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.620
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:39.625
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.630
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:39.634
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.640
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:39.646
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.653
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:39.660
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.667
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:39.673
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.680
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:39.689
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.697
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:39.706
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.716
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:39.727
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.735
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:39.744
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.751
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:39.759
+Unexpected IOException: 5,1,localhost.testing.CreateScenes,addWiredFixtures(localhost.testing.CreateScenes),localhost.testing.CreateScenes,null,null
+
+
+# Created on 2017-10-31T13:53:39.768
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:39.775
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.783
+Unexpected IOException with stream: 	at localhost.testing.CreateScenes.addWiredFixtures(CreateScenes.java:28)
+
+# Created on 2017-10-31T13:53:39.790
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.798
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:39.805
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.813
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:39.823
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.832
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:39.841
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.850
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:39.857
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.864
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:39.871
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.877
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:39.883
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.889
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:39.895
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.900
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:39.907
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.917
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:39.923
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.928
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:39.933
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.938
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:39.944
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.949
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:39.954
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.959
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:39.964
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.969
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:39.974
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.979
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:39.984
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.989
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:39.994
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:39.999
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:40.004
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.009
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:40.014
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.020
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:40.024
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.030
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:40.035
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.040
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:40.045
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.050
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:40.055
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.060
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:40.066
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.070
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:40.076
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.083
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:40.089
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.095
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:40.101
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.107
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:40.116
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.123
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:40.129
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.135
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:40.141
+Unexpected IOException: 6,1,localhost.testing.CreateScenes,addWiredFixtures(localhost.testing.CreateScenes),null,null,null
+
+
+# Created on 2017-10-31T13:53:40.148
+Unexpected IOException: 5,1,localhost.testing.CreateScenes,createAllScenes(localhost.testing.CreateScenes),localhost.testing.CreateScenes,null,null
+
+
+# Created on 2017-10-31T13:53:40.154
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:40.160
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.166
+Unexpected IOException with stream: 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+
+# Created on 2017-10-31T13:53:40.172
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.179
+Unexpected IOException with stream: 	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:68)
+
+# Created on 2017-10-31T13:53:40.185
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.191
+Unexpected IOException with stream: 	at localhost.testing.CreateScenes.createAllScenes(CreateScenes.java:54)
+
+# Created on 2017-10-31T13:53:40.197
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.203
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:40.209
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.215
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:40.221
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.227
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:40.233
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.239
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:40.245
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.252
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:40.258
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.264
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:40.270
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.276
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:40.281
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.286
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:40.292
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.299
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:40.305
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.311
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:40.325
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.330
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:40.335
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.340
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:40.345
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.351
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:40.356
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.361
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:40.366
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.372
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:40.376
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.381
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:40.386
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.392
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:40.396
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.402
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:40.407
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.411
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:40.416
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.421
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:40.426
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.432
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:40.437
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.442
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:40.447
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.452
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:40.457
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.462
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:40.469
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.475
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:40.481
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.487
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:40.494
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.500
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:40.506
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.512
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:40.518
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.527
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:40.534
+Unexpected IOException: 6,1,localhost.testing.CreateScenes,createAllScenes(localhost.testing.CreateScenes),null,null,null
+
+
+# Created on 2017-10-31T13:53:40.541
+Unexpected IOException: 5,1,localhost.testing.CreateScenes,clearAllScenes(localhost.testing.CreateScenes),localhost.testing.CreateScenes,null,null
+
+
+# Created on 2017-10-31T13:53:40.549
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:40.556
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.563
+Unexpected IOException with stream: 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+
+# Created on 2017-10-31T13:53:40.570
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.578
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
+
+# Created on 2017-10-31T13:53:40.584
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.590
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:71)
+
+# Created on 2017-10-31T13:53:40.597
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.603
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+
+# Created on 2017-10-31T13:53:40.610
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.616
+Unexpected IOException with stream: 	at localhost.testing.CreateScenes.clearAllScenes(CreateScenes.java:158)
+
+# Created on 2017-10-31T13:53:40.622
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.628
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:40.634
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.640
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:40.646
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.652
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:40.658
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.664
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:40.669
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.675
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:40.680
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.685
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:40.690
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.696
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:40.701
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.706
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:40.711
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.716
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:40.722
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.729
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:40.735
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.741
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:40.747
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.752
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:40.757
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.762
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:40.767
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.772
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:40.777
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.782
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:40.787
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.792
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:40.797
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.802
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:40.807
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.812
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:40.817
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.822
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:40.827
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.832
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:40.837
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.842
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:40.847
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.852
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:40.857
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.862
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:40.868
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.873
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:40.879
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.885
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:40.891
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.897
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:40.903
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.910
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:40.916
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.922
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:40.930
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.937
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:40.944
+Unexpected IOException: 6,1,localhost.testing.CreateScenes,clearAllScenes(localhost.testing.CreateScenes),null,null,null
+
+
+# Created on 2017-10-31T13:53:40.951
+Unexpected IOException: 5,1,localhost.testing.CreateScenes,deleteAllFixtures(localhost.testing.CreateScenes),localhost.testing.CreateScenes,null,null
+
+
+# Created on 2017-10-31T13:53:40.957
+Unexpected IOException with stream: java.lang.NullPointerException
+
+# Created on 2017-10-31T13:53:40.964
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.970
+Unexpected IOException with stream: 	at localhost.testing.CreateScenes.deleteAllFixtures(CreateScenes.java:179)
+
+# Created on 2017-10-31T13:53:40.976
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.982
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-10-31T13:53:40.988
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:40.994
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-10-31T13:53:41.001
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.006
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-10-31T13:53:41.013
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.019
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-10-31T13:53:41.025
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.031
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-10-31T13:53:41.037
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.043
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-10-31T13:53:41.049
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.055
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-10-31T13:53:41.061
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.067
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-10-31T13:53:41.073
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.079
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-10-31T13:53:41.084
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.089
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-10-31T13:53:41.094
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.099
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-10-31T13:53:41.104
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.108
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-10-31T13:53:41.113
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.118
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-10-31T13:53:41.123
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.129
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-10-31T13:53:41.134
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.141
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-10-31T13:53:41.147
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.152
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-10-31T13:53:41.157
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.162
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-10-31T13:53:41.166
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.172
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-10-31T13:53:41.177
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.182
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-10-31T13:53:41.187
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.192
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-10-31T13:53:41.198
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.203
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-10-31T13:53:41.208
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.213
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-10-31T13:53:41.218
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.223
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-10-31T13:53:41.228
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.233
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-10-31T13:53:41.239
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.246
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-10-31T13:53:41.252
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.258
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-10-31T13:53:41.264
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.270
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-10-31T13:53:41.277
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.283
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-10-31T13:53:41.290
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.296
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-10-31T13:53:41.302
+Unexpected IOException: 6,1,localhost.testing.CreateScenes,deleteAllFixtures(localhost.testing.CreateScenes),null,null,null
+
+
+# Created on 2017-10-31T13:53:41.309
+Unexpected IOException: 8,1,localhost.testing.CreateScenes,closeBrowser(localhost.testing.CreateScenes),null,null,null,null,CreateScenes.closeBrowser:208 NullPointer,java.lang.NullPointerException\000A\0009at localhost.testing.CreateScenes.closeBrowser(CreateScenes.java:208)\000A
+
+
+# Created on 2017-10-31T13:53:41.381
+Unexpected IOException with stream: S
+
+# Created on 2017-10-31T13:53:41.388
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:41.394
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:41.402
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:41.408
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:41.414
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:41.420
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:41.426
+Unexpected IOException with stream: g
+
+# Created on 2017-10-31T13:53:41.433
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.439
+Unexpected IOException with stream: C
+
+# Created on 2017-10-31T13:53:41.445
+Unexpected IOException with stream: h
+
+# Created on 2017-10-31T13:53:41.451
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:41.457
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:41.463
+Unexpected IOException with stream: m
+
+# Created on 2017-10-31T13:53:41.469
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:41.475
+Unexpected IOException with stream: D
+
+# Created on 2017-10-31T13:53:41.482
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:41.488
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:41.494
+Unexpected IOException with stream: v
+
+# Created on 2017-10-31T13:53:41.500
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:41.506
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:41.513
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.519
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:41.525
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:41.531
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:41.538
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:41.543
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:41.550
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.557
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:41.562
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:41.568
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:41.573
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:41.578
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:41.583
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.588
+Unexpected IOException with stream: (
+
+# Created on 2017-10-31T13:53:41.593
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:41.599
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:41.604
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:41.609
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:41.615
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:41.620
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.625
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:41.630
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:41.635
+Unexpected IOException with stream: d
+
+# Created on 2017-10-31T13:53:41.640
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:41.645
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:41.651
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:41.656
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.661
+Unexpected IOException with stream: 9
+
+# Created on 2017-10-31T13:53:41.666
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:41.671
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.676
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:41.681
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:41.686
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:41.691
+Unexpected IOException with stream: f
+
+# Created on 2017-10-31T13:53:41.696
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.701
+Unexpected IOException with stream: 8
+
+# Created on 2017-10-31T13:53:41.706
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:41.711
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:41.716
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:41.722
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:41.726
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:41.732
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:41.737
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:41.742
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:41.747
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:41.752
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.758
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:41.765
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:41.770
+Unexpected IOException with stream: b
+
+# Created on 2017-10-31T13:53:41.775
+Unexpected IOException with stream: 3
+
+# Created on 2017-10-31T13:53:41.781
+Unexpected IOException with stream: 7
+
+# Created on 2017-10-31T13:53:41.786
+Unexpected IOException with stream: 0
+
+# Created on 2017-10-31T13:53:41.791
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.796
+Unexpected IOException with stream: b
+
+# Created on 2017-10-31T13:53:41.801
+Unexpected IOException with stream: )
+
+# Created on 2017-10-31T13:53:41.806
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.811
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:41.817
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:41.821
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.827
+Unexpected IOException with stream: p
+
+# Created on 2017-10-31T13:53:41.832
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:41.837
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:41.842
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:41.847
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.852
+Unexpected IOException with stream: 4
+
+# Created on 2017-10-31T13:53:41.857
+Unexpected IOException with stream: 1
+
+# Created on 2017-10-31T13:53:41.864
+Unexpected IOException with stream: 5
+
+# Created on 2017-10-31T13:53:41.872
+Unexpected IOException with stream: 2
+
+# Created on 2017-10-31T13:53:41.879
+Unexpected IOException with stream: 6
+
+# Created on 2017-10-31T13:53:41.886
+Unexpected IOException with stream: 
+
+# Created on 2017-10-31T13:53:41.899
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:41.906
+Unexpected IOException with stream: O
+
+# Created on 2017-10-31T13:53:41.912
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:41.919
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:41.924
+Unexpected IOException with stream: y
+
+# Created on 2017-10-31T13:53:41.930
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.936
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:41.943
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:41.951
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:41.959
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:41.967
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:41.976
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:41.986
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:41.993
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:42.002
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:42.009
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:42.015
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:42.021
+Unexpected IOException with stream: c
+
+# Created on 2017-10-31T13:53:42.026
+Unexpected IOException with stream: t
+
+# Created on 2017-10-31T13:53:42.033
+Unexpected IOException with stream: i
+
+# Created on 2017-10-31T13:53:42.041
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:42.055
+Unexpected IOException with stream: n
+
+# Created on 2017-10-31T13:53:42.065
+Unexpected IOException with stream: s
+
+# Created on 2017-10-31T13:53:42.079
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:42.088
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:42.102
+Unexpected IOException with stream: r
+
+# Created on 2017-10-31T13:53:42.122
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:42.141
+Unexpected IOException with stream:  
+
+# Created on 2017-10-31T13:53:42.158
+Unexpected IOException with stream: a
+
+# Created on 2017-10-31T13:53:42.197
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:42.213
+Unexpected IOException with stream: l
+
+# Created on 2017-10-31T13:53:42.227
+Unexpected IOException with stream: o
+
+# Created on 2017-10-31T13:53:42.287
+Unexpected IOException with stream: w
+
+# Created on 2017-10-31T13:53:42.307
+Unexpected IOException with stream: e
+
+# Created on 2017-10-31T13:53:42.330
+Unexpected IOException with stream: d
+
+# Created on 2017-10-31T13:53:42.356
+Unexpected IOException with stream: .
+
+# Created on 2017-10-31T13:53:42.365
+Unexpected IOException with stream: 
+
+# Created on 2017-10-31T13:53:42.380
+Unexpected IOException with stream: 
+
+
+# Created on 2017-10-31T13:53:43.342
+Unexpected IOException with stream: Oct 31, 2017 1:53:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+

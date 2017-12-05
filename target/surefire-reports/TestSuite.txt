@@ -1,4 +1,64 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.655 s - in TestSuite
+Tests run: 58, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 98.221 s <<< FAILURE! - in TestSuite
+statusLinks(localhost.testing.BasicNavigation)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.statusLinks(BasicNavigation.java:21)
+
+configurationLinks(localhost.testing.BasicNavigation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.configurationLinks(BasicNavigation.java:37)
+
+overrideLinks(localhost.testing.BasicNavigation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.overrideLinks(BasicNavigation.java:52)
+
+scheduleLinks(localhost.testing.BasicNavigation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.scheduleLinks(BasicNavigation.java:65)
+
+groupsLinks(localhost.testing.BasicNavigation)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.groupsLinks(BasicNavigation.java:76)
+
+scenelistsLinks(localhost.testing.BasicNavigation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.scenelistsLinks(BasicNavigation.java:85)
+
+closeBrowser(localhost.testing.BasicNavigation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.BasicNavigation.closeBrowser(BasicNavigation.java:92)
+
+closeBrowser(localhost.testing.MaxOutputs)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.MaxOutputs.closeBrowser(MaxOutputs.java:310)
+
+closeBrowser(localhost.testing.MultiInputs)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.MultiInputs.closeBrowser(MultiInputs.java:195)
+
+closeBrowser(localhost.testing.CreateGroups)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.CreateGroups.closeBrowser(CreateGroups.java:205)
+
+closeBrowser(localhost.testing.CreateScenes)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.CreateScenes.closeBrowser(CreateScenes.java:216)
+
+closeBrowser(localhost.testing.MultiOutputs)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.MultiOutputs.closeBrowser(MultiOutputs.java:342)
+
+closeBrowser(localhost.testing.CreateSchedule)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.CreateSchedule.closeBrowser(CreateSchedule.java:202)
+
+closeBrowser(localhost.testing.ErrorValidation)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.ErrorValidation.closeBrowser(ErrorValidation.java:594)
+
+closeBrowser(localhost.testing.WallStation)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at localhost.testing.WallStation.closeBrowser(WallStation.java:520)
+

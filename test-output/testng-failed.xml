@@ -3,18 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="localhost.testing.BasicNavigation">
+      <class name="localhost.testing.ErrorValidation">
         <methods>
-          <include name="configurationLinks"/>
-          <include name="scenelistsLinks"/>
           <include name="setup"/>
-          <include name="scheduleLinks"/>
-          <include name="statusLinks"/>
-          <include name="groupsLinks"/>
+          <include name="scenelistName"/>
           <include name="closeBrowser"/>
-          <include name="overrideLinks"/>
         </methods>
-      </class> <!-- localhost.testing.BasicNavigation -->
+      </class> <!-- localhost.testing.ErrorValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [rPDG UI Suite]">
+  <test name="Basic Navigation(failed)">
+    <classes>
+      <class name="localhost.testing.BasicNavigation">
+        <methods>
+          <include name="configurationLinks"/>
+          <include name="scenelistsLinks"/>
+          <include name="setup"/>
+          <include name="scheduleLinks"/>
+          <include name="statusLinks"/>
+          <include name="groupsLinks"/>
+          <include name="closeBrowser"/>
+          <include name="overrideLinks"/>
+        </methods>
+      </class> <!-- localhost.testing.BasicNavigation -->
+      <class name="localhost.testing.CreateGroups">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- localhost.testing.CreateGroups -->
+      <class name="localhost.testing.WallStation">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- localhost.testing.WallStation -->
+      <class name="localhost.testing.ErrorValidation">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- localhost.testing.ErrorValidation -->
+      <class name="localhost.testing.CreateSchedule">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- localhost.testing.CreateSchedule -->
+      <class name="localhost.testing.MaxOutputs">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- localhost.testing.MaxOutputs -->
+      <class name="localhost.testing.CreateScenes">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- localhost.testing.CreateScenes -->
+      <class name="localhost.testing.MultiInputs">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- localhost.testing.MultiInputs -->
+      <class name="localhost.testing.MultiOutputs">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- localhost.testing.MultiOutputs -->
+    </classes>
+  </test> <!-- Basic Navigation(failed) -->
+</suite> <!-- Failed suite [rPDG UI Suite] -->

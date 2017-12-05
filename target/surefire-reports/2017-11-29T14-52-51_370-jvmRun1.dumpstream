@@ -1,0 +1,4124 @@
+# Created on 2017-11-29T14:55:37.461
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2017-11-29T14:55:37.645
+Unexpected IOException with stream: Nov 29, 2017 2:55:37 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLat(ErrorValidation.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:38.152
+Unexpected IOException with stream: Nov 29, 2017 2:55:38 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLat(ErrorValidation.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:38.660
+Unexpected IOException with stream: Nov 29, 2017 2:55:38 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLat(ErrorValidation.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:38.666
+Unexpected IOException with stream: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: btsavesiteinfo (tried for 5 second(s) with 500 MILLISECONDS interval)
+
+# Created on 2017-11-29T14:55:38.672
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.677
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+
+# Created on 2017-11-29T14:55:38.682
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.687
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+
+# Created on 2017-11-29T14:55:38.692
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.697
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.siteLat(ErrorValidation.java:93)
+
+# Created on 2017-11-29T14:55:38.701
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.706
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:38.710
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.715
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:38.719
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.723
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:38.728
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.732
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:38.736
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.740
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:38.744
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.749
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:38.753
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.757
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:38.762
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.766
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:38.771
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.775
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:38.780
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.785
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:38.789
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.793
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:38.797
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.801
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:38.804
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.809
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:38.812
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.816
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:38.820
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.824
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:38.828
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.832
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:38.835
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.839
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:38.843
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.846
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:38.850
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.854
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:38.859
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.863
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:38.866
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.870
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:38.873
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.877
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:38.880
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.884
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:38.887
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.891
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:38.895
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.899
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:38.903
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.908
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:38.912
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.916
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:38.920
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.924
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:38.929
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.933
+Unexpected IOException with stream: Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+
+# Created on 2017-11-29T14:55:38.938
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.942
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2017-11-29T14:55:38.947
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.951
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:38.956
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.960
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:38.964
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.968
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:38.972
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.976
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:38.980
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.984
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:38.988
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:38.991
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:38.995
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.000
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+
+# Created on 2017-11-29T14:55:39.004
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.008
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+
+# Created on 2017-11-29T14:55:39.012
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.016
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ById.findElements(By.java:210)
+
+# Created on 2017-11-29T14:55:39.021
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.025
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+
+# Created on 2017-11-29T14:55:39.029
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.033
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+
+# Created on 2017-11-29T14:55:39.038
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.042
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+
+# Created on 2017-11-29T14:55:39.046
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.050
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+
+# Created on 2017-11-29T14:55:39.055
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.059
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+
+# Created on 2017-11-29T14:55:39.063
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.067
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+
+# Created on 2017-11-29T14:55:39.072
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.076
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+
+# Created on 2017-11-29T14:55:39.080
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.084
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+
+# Created on 2017-11-29T14:55:39.088
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.093
+Unexpected IOException with stream: 	... 29 more
+
+# Created on 2017-11-29T14:55:39.097
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:39.102
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:39.106
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,siteLat(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:39.111
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,siteLong(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:39.118
+Unexpected IOException with stream: Nov 29, 2017 2:55:39 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:39.625
+Unexpected IOException with stream: Nov 29, 2017 2:55:39 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:40.132
+Unexpected IOException with stream: Nov 29, 2017 2:55:40 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:40.639
+Unexpected IOException with stream: Nov 29, 2017 2:55:40 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:41.146
+Unexpected IOException with stream: Nov 29, 2017 2:55:41 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:41.653
+Unexpected IOException with stream: Nov 29, 2017 2:55:41 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:42.160
+Unexpected IOException with stream: Nov 29, 2017 2:55:42 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:42.667
+Unexpected IOException with stream: Nov 29, 2017 2:55:42 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:43.175
+Unexpected IOException with stream: Nov 29, 2017 2:55:43 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:43.682
+Unexpected IOException with stream: Nov 29, 2017 2:55:43 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:44.189
+Unexpected IOException with stream: Nov 29, 2017 2:55:44 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: btsavesiteinfo)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ById.findElements(By.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-11-29T14:55:44.194
+Unexpected IOException with stream: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: btsavesiteinfo (tried for 5 second(s) with 500 MILLISECONDS interval)
+
+# Created on 2017-11-29T14:55:44.199
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.204
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+
+# Created on 2017-11-29T14:55:44.209
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.214
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+
+# Created on 2017-11-29T14:55:44.219
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.224
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.siteLong(ErrorValidation.java:147)
+
+# Created on 2017-11-29T14:55:44.229
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.233
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:44.238
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.242
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:44.247
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.252
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:44.256
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.261
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:44.266
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.270
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:44.274
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.278
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:44.283
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.287
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:44.291
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.295
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:44.299
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.303
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:44.308
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.312
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:44.316
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.320
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:44.324
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.328
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:44.332
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.335
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:44.338
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.342
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:44.345
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.349
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:44.353
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.357
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:44.360
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.364
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:44.367
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.371
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:44.375
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.378
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:44.382
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.386
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:44.390
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.394
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:44.397
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.401
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:44.405
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.408
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:44.412
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.415
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:44.419
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.424
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:44.428
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.432
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:44.437
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.441
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:44.445
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.449
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:44.454
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.458
+Unexpected IOException with stream: Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavesiteinfo}
+
+# Created on 2017-11-29T14:55:44.463
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.467
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:44.471
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.476
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:44.480
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.484
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:44.489
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.493
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:44.498
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.503
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:44.507
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.511
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:44.515
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.519
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+
+# Created on 2017-11-29T14:55:44.523
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.527
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)
+
+# Created on 2017-11-29T14:55:44.532
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.536
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ById.findElements(By.java:210)
+
+# Created on 2017-11-29T14:55:44.540
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.544
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+
+# Created on 2017-11-29T14:55:44.548
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.552
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+
+# Created on 2017-11-29T14:55:44.557
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.561
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+
+# Created on 2017-11-29T14:55:44.565
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.569
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+
+# Created on 2017-11-29T14:55:44.574
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.579
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+
+# Created on 2017-11-29T14:55:44.583
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.587
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+
+# Created on 2017-11-29T14:55:44.591
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.595
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+
+# Created on 2017-11-29T14:55:44.600
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.605
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+
+# Created on 2017-11-29T14:55:44.609
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.613
+Unexpected IOException with stream: 	... 29 more
+
+# Created on 2017-11-29T14:55:44.618
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.622
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:44.626
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,siteLong(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:44.631
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,nodeName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:44.637
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=xpath, value=html/body/div[1]/div[1]/div[1]/div[1]/div/div[1]/div[1]/a[2]/i}
+
+# Created on 2017-11-29T14:55:44.641
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.645
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:44.648
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.652
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:44.655
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.659
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:44.662
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.666
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:44.669
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.673
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:44.676
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.680
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:44.684
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.688
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+
+# Created on 2017-11-29T14:55:44.693
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.698
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+
+# Created on 2017-11-29T14:55:44.702
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.706
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+
+# Created on 2017-11-29T14:55:44.710
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.715
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+
+# Created on 2017-11-29T14:55:44.719
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.724
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.nodeName(ErrorValidation.java:203)
+
+# Created on 2017-11-29T14:55:44.728
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.732
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:44.737
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.741
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:44.745
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.750
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:44.754
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.759
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:44.764
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.768
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:44.772
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.777
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:44.781
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.786
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:44.790
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.794
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:44.798
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.802
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:44.807
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.811
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:44.815
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.819
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:44.823
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.827
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:44.831
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.835
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:44.839
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.842
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:44.846
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.849
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:44.853
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.856
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:44.860
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.864
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:44.867
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.872
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:44.876
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.879
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:44.883
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.887
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:44.891
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.895
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:44.898
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.902
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:44.906
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.910
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:44.914
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.917
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:44.922
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.926
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:44.931
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.936
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:44.940
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.945
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:44.950
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.955
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:44.959
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.964
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:44.969
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,nodeName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:44.974
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,fixtureName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:44.980
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+
+# Created on 2017-11-29T14:55:44.985
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.989
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:44.993
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:44.998
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:45.002
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.006
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:45.010
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.014
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:45.018
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.021
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:45.025
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.028
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:45.032
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.036
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:573)
+
+# Created on 2017-11-29T14:55:45.041
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.046
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.fixtureName(ErrorValidation.java:257)
+
+# Created on 2017-11-29T14:55:45.052
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.057
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:45.062
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.067
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:45.072
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.077
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:45.082
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.087
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:45.093
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.098
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:45.103
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.108
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:45.113
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.118
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:45.123
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.129
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:45.134
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.140
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:45.145
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.151
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:45.157
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.162
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:45.167
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.172
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:45.177
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.182
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:45.187
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.192
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:45.196
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.201
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:45.205
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.210
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:45.214
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.217
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:45.221
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.224
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:45.228
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.231
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:45.235
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.238
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:45.242
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.245
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:45.249
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.252
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:45.256
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.259
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:45.263
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.267
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:45.271
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.275
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:45.280
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.285
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:45.289
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.293
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:45.297
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.302
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:45.306
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.311
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:45.315
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,fixtureName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:45.320
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,contactinputName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:45.326
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+
+# Created on 2017-11-29T14:55:45.331
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.335
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:45.339
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.344
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:45.348
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.352
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:45.356
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.360
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:45.364
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.368
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:45.371
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.375
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:45.379
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.383
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:573)
+
+# Created on 2017-11-29T14:55:45.388
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.393
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.contactinputName(ErrorValidation.java:308)
+
+# Created on 2017-11-29T14:55:45.398
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.404
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:45.409
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.414
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:45.418
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.424
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:45.429
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.434
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:45.439
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.444
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:45.449
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.454
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:45.459
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.464
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:45.469
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.475
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:45.480
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.485
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:45.490
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.495
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:45.500
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.505
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:45.510
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.515
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:45.520
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.525
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:45.531
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.536
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:45.541
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.546
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:45.550
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.555
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:45.559
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.563
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:45.567
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.570
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:45.574
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.578
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:45.582
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.585
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:45.589
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.593
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:45.597
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.600
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:45.604
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.607
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:45.611
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.614
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:45.618
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.623
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:45.627
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.631
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:45.636
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.641
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:45.645
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.650
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:45.654
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.659
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:45.663
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,contactinputName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:45.668
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,levelinputName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:45.674
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=id, value=btsavelevelinput}
+
+# Created on 2017-11-29T14:55:45.679
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.684
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:45.689
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.693
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:45.698
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.702
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:45.706
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.710
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:45.714
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.718
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:45.722
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.725
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:45.729
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.734
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+
+# Created on 2017-11-29T14:55:45.738
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.742
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
+
+# Created on 2017-11-29T14:55:45.747
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.751
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ById.findElement(By.java:218)
+
+# Created on 2017-11-29T14:55:45.755
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.759
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+
+# Created on 2017-11-29T14:55:45.764
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.768
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.levelinputName(ErrorValidation.java:359)
+
+# Created on 2017-11-29T14:55:45.772
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.776
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:45.780
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.785
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:45.789
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.793
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:45.798
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.802
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:45.806
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.810
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:45.815
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.819
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:45.823
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.827
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:45.832
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.836
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:45.840
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.844
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:45.849
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.854
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:45.858
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.862
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:45.866
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.870
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:45.874
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.878
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:45.881
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.885
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:45.888
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.892
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:45.895
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.899
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:45.902
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.906
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:45.909
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.913
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:45.916
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.920
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:45.923
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.927
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:45.930
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.934
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:45.937
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.941
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:45.944
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.948
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:45.951
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.955
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:45.959
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.963
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:45.967
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.972
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:45.976
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.980
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:45.985
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.989
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:45.993
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:45.997
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:46.002
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,levelinputName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:46.007
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,sceneName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:46.013
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=link text, value=Override/Scene Edit}
+
+# Created on 2017-11-29T14:55:46.018
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.022
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:46.026
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.031
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:46.035
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.039
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:46.043
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.047
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:46.051
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.054
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:46.058
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.062
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:46.066
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.070
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+
+# Created on 2017-11-29T14:55:46.074
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.079
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+
+# Created on 2017-11-29T14:55:46.083
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.088
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+
+# Created on 2017-11-29T14:55:46.092
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.097
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+
+# Created on 2017-11-29T14:55:46.101
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.105
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.sceneName(ErrorValidation.java:407)
+
+# Created on 2017-11-29T14:55:46.109
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.114
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:46.118
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.122
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:46.127
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.131
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:46.135
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.140
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:46.144
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.149
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:46.153
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.157
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:46.162
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.166
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:46.171
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.175
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:46.179
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.183
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:46.188
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.192
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:46.196
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.200
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:46.204
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.208
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:46.212
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.216
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:46.219
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.223
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:46.226
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.230
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:46.233
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.237
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:46.241
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.244
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:46.248
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.252
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:46.255
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.259
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:46.262
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.266
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:46.270
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.274
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:46.277
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.281
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:46.284
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.288
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:46.291
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.295
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:46.299
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.303
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:46.308
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.313
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:46.317
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.321
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:46.326
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.330
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:46.334
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.338
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:46.343
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,sceneName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:46.347
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,groupName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:46.852
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=link text, value=Groups}
+
+# Created on 2017-11-29T14:55:46.857
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.862
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:46.867
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.871
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:46.875
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.879
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:46.883
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.887
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:46.891
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.894
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:46.898
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.901
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:46.905
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.910
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+
+# Created on 2017-11-29T14:55:46.914
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.918
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+
+# Created on 2017-11-29T14:55:46.922
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.927
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+
+# Created on 2017-11-29T14:55:46.931
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.935
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+
+# Created on 2017-11-29T14:55:46.940
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.944
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.groupName(ErrorValidation.java:471)
+
+# Created on 2017-11-29T14:55:46.948
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.952
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:46.958
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.962
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:46.966
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.970
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:46.975
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.979
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:46.983
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.988
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:46.992
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:46.996
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:47.000
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.005
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:47.009
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.013
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:47.017
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.022
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:47.026
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.030
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:47.035
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.039
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:47.043
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.047
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:47.051
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.055
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:47.059
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.062
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:47.066
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.070
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:47.073
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.077
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:47.081
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.085
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:47.089
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.092
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:47.096
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.100
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:47.103
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.107
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:47.110
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.114
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:47.117
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.121
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:47.125
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.129
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:47.132
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.136
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:47.140
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.145
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:47.150
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.154
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:47.158
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.163
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:47.167
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.172
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:47.176
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.180
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:47.184
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,groupName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:47.189
+Unexpected IOException: 5,1,localhost.testing.ErrorValidation,scenelistName(localhost.testing.ErrorValidation),localhost.testing.ErrorValidation,null,null
+
+
+# Created on 2017-11-29T14:55:47.694
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0JEVNSK', ip: '172.19.105.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Cronos\AppData\Local\Temp\scoped_dir11188_1010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8dfc3b9c92ecd92409aa021f34f0e286
+*** Element info: {Using=link text, value=Scene Lists}
+
+# Created on 2017-11-29T14:55:47.699
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.704
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+
+# Created on 2017-11-29T14:55:47.708
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.712
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-11-29T14:55:47.716
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.721
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created on 2017-11-29T14:55:47.725
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.728
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-11-29T14:55:47.732
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.735
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-11-29T14:55:47.739
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.742
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+
+# Created on 2017-11-29T14:55:47.746
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.751
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+
+# Created on 2017-11-29T14:55:47.755
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.759
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+
+# Created on 2017-11-29T14:55:47.763
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.767
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+
+# Created on 2017-11-29T14:55:47.772
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.776
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+
+# Created on 2017-11-29T14:55:47.780
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.784
+Unexpected IOException with stream: 	at localhost.testing.ErrorValidation.scenelistName(ErrorValidation.java:534)
+
+# Created on 2017-11-29T14:55:47.788
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.793
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-11-29T14:55:47.797
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.801
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-11-29T14:55:47.805
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.810
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-11-29T14:55:47.814
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.818
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2017-11-29T14:55:47.822
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.826
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+
+# Created on 2017-11-29T14:55:47.830
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.835
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+
+# Created on 2017-11-29T14:55:47.839
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.843
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+
+# Created on 2017-11-29T14:55:47.847
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.851
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+
+# Created on 2017-11-29T14:55:47.856
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.860
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+
+# Created on 2017-11-29T14:55:47.864
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.868
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+
+# Created on 2017-11-29T14:55:47.873
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.877
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+
+# Created on 2017-11-29T14:55:47.882
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.886
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:610)
+
+# Created on 2017-11-29T14:55:47.890
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.894
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+
+# Created on 2017-11-29T14:55:47.898
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.902
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+
+# Created on 2017-11-29T14:55:47.906
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.910
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created on 2017-11-29T14:55:47.915
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.919
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created on 2017-11-29T14:55:47.924
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.928
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2017-11-29T14:55:47.932
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.936
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created on 2017-11-29T14:55:47.940
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.945
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+
+# Created on 2017-11-29T14:55:47.949
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.953
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+
+# Created on 2017-11-29T14:55:47.957
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.962
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1133)
+
+# Created on 2017-11-29T14:55:47.966
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.971
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1104)
+
+# Created on 2017-11-29T14:55:47.975
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.979
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2017-11-29T14:55:47.983
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.987
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2017-11-29T14:55:47.992
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:47.997
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2017-11-29T14:55:48.002
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:48.006
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-11-29T14:55:48.011
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:48.016
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-11-29T14:55:48.021
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:48.026
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-11-29T14:55:48.030
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:48.034
+Unexpected IOException with stream: Failed due to an unhandled Exception
+
+
+# Created on 2017-11-29T14:55:48.039
+Unexpected IOException: 6,1,localhost.testing.ErrorValidation,scenelistName(localhost.testing.ErrorValidation),null,null,null
+
+
+# Created on 2017-11-29T14:55:48.725
+Unexpected IOException with stream: S
+
+# Created on 2017-11-29T14:55:48.730
+Unexpected IOException with stream: t
+
+# Created on 2017-11-29T14:55:48.734
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:48.739
+Unexpected IOException with stream: r
+
+# Created on 2017-11-29T14:55:48.743
+Unexpected IOException with stream: t
+
+# Created on 2017-11-29T14:55:48.748
+Unexpected IOException with stream: i
+
+# Created on 2017-11-29T14:55:48.752
+Unexpected IOException with stream: n
+
+# Created on 2017-11-29T14:55:48.757
+Unexpected IOException with stream: g
+
+# Created on 2017-11-29T14:55:48.761
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:48.766
+Unexpected IOException with stream: C
+
+# Created on 2017-11-29T14:55:48.771
+Unexpected IOException with stream: h
+
+# Created on 2017-11-29T14:55:48.775
+Unexpected IOException with stream: r
+
+# Created on 2017-11-29T14:55:48.780
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:48.784
+Unexpected IOException with stream: m
+
+# Created on 2017-11-29T14:55:48.788
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:48.792
+Unexpected IOException with stream: D
+
+# Created on 2017-11-29T14:55:48.797
+Unexpected IOException with stream: r
+
+# Created on 2017-11-29T14:55:48.802
+Unexpected IOException with stream: i
+
+# Created on 2017-11-29T14:55:48.806
+Unexpected IOException with stream: v
+
+# Created on 2017-11-29T14:55:48.811
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:48.816
+Unexpected IOException with stream: r
+
+# Created on 2017-11-29T14:55:48.820
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:48.824
+Unexpected IOException with stream: 2
+
+# Created on 2017-11-29T14:55:48.828
+Unexpected IOException with stream: .
+
+# Created on 2017-11-29T14:55:48.832
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:48.837
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:48.841
+Unexpected IOException with stream: .
+
+# Created on 2017-11-29T14:55:48.845
+Unexpected IOException with stream: 5
+
+# Created on 2017-11-29T14:55:48.849
+Unexpected IOException with stream: 0
+
+# Created on 2017-11-29T14:55:48.854
+Unexpected IOException with stream: 6
+
+# Created on 2017-11-29T14:55:48.858
+Unexpected IOException with stream: 1
+
+# Created on 2017-11-29T14:55:48.862
+Unexpected IOException with stream: 2
+
+# Created on 2017-11-29T14:55:48.866
+Unexpected IOException with stream: 0
+
+# Created on 2017-11-29T14:55:48.871
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:48.874
+Unexpected IOException with stream: (
+
+# Created on 2017-11-29T14:55:48.878
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:48.881
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:48.885
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:48.888
+Unexpected IOException with stream: 5
+
+# Created on 2017-11-29T14:55:48.892
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:48.895
+Unexpected IOException with stream: 4
+
+# Created on 2017-11-29T14:55:48.899
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:48.902
+Unexpected IOException with stream: 7
+
+# Created on 2017-11-29T14:55:48.906
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:48.910
+Unexpected IOException with stream: 4
+
+# Created on 2017-11-29T14:55:48.913
+Unexpected IOException with stream: 6
+
+# Created on 2017-11-29T14:55:48.917
+Unexpected IOException with stream: 2
+
+# Created on 2017-11-29T14:55:48.920
+Unexpected IOException with stream: 8
+
+# Created on 2017-11-29T14:55:48.924
+Unexpected IOException with stream: 6
+
+# Created on 2017-11-29T14:55:48.928
+Unexpected IOException with stream: c
+
+# Created on 2017-11-29T14:55:48.931
+Unexpected IOException with stream: 0
+
+# Created on 2017-11-29T14:55:48.935
+Unexpected IOException with stream: b
+
+# Created on 2017-11-29T14:55:48.938
+Unexpected IOException with stream: c
+
+# Created on 2017-11-29T14:55:48.942
+Unexpected IOException with stream: 2
+
+# Created on 2017-11-29T14:55:48.946
+Unexpected IOException with stream: d
+
+# Created on 2017-11-29T14:55:48.949
+Unexpected IOException with stream: 2
+
+# Created on 2017-11-29T14:55:48.952
+Unexpected IOException with stream: d
+
+# Created on 2017-11-29T14:55:48.956
+Unexpected IOException with stream: c
+
+# Created on 2017-11-29T14:55:48.960
+Unexpected IOException with stream: 9
+
+# Created on 2017-11-29T14:55:48.963
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:48.967
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:48.970
+Unexpected IOException with stream: 4
+
+# Created on 2017-11-29T14:55:48.974
+Unexpected IOException with stream: 9
+
+# Created on 2017-11-29T14:55:48.977
+Unexpected IOException with stream: 1
+
+# Created on 2017-11-29T14:55:48.981
+Unexpected IOException with stream: 5
+
+# Created on 2017-11-29T14:55:48.985
+Unexpected IOException with stream: b
+
+# Created on 2017-11-29T14:55:48.988
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:48.992
+Unexpected IOException with stream: 8
+
+# Created on 2017-11-29T14:55:48.995
+Unexpected IOException with stream: 1
+
+# Created on 2017-11-29T14:55:48.999
+Unexpected IOException with stream: d
+
+# Created on 2017-11-29T14:55:49.002
+Unexpected IOException with stream: 9
+
+# Created on 2017-11-29T14:55:49.005
+Unexpected IOException with stream: 0
+
+# Created on 2017-11-29T14:55:49.009
+Unexpected IOException with stream: 2
+
+# Created on 2017-11-29T14:55:49.012
+Unexpected IOException with stream: 3
+
+# Created on 2017-11-29T14:55:49.017
+Unexpected IOException with stream: f
+
+# Created on 2017-11-29T14:55:49.020
+Unexpected IOException with stream: )
+
+# Created on 2017-11-29T14:55:49.024
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.027
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:49.030
+Unexpected IOException with stream: n
+
+# Created on 2017-11-29T14:55:49.034
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.037
+Unexpected IOException with stream: p
+
+# Created on 2017-11-29T14:55:49.041
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:49.044
+Unexpected IOException with stream: r
+
+# Created on 2017-11-29T14:55:49.047
+Unexpected IOException with stream: t
+
+# Created on 2017-11-29T14:55:49.051
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.054
+Unexpected IOException with stream: 1
+
+# Created on 2017-11-29T14:55:49.058
+Unexpected IOException with stream: 8
+
+# Created on 2017-11-29T14:55:49.061
+Unexpected IOException with stream: 8
+
+# Created on 2017-11-29T14:55:49.064
+Unexpected IOException with stream: 0
+
+# Created on 2017-11-29T14:55:49.069
+Unexpected IOException with stream: 1
+
+# Created on 2017-11-29T14:55:49.072
+Unexpected IOException with stream: 
+
+# Created on 2017-11-29T14:55:49.076
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:49.080
+Unexpected IOException with stream: O
+
+# Created on 2017-11-29T14:55:49.083
+Unexpected IOException with stream: n
+
+# Created on 2017-11-29T14:55:49.087
+Unexpected IOException with stream: l
+
+# Created on 2017-11-29T14:55:49.090
+Unexpected IOException with stream: y
+
+# Created on 2017-11-29T14:55:49.094
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.097
+Unexpected IOException with stream: l
+
+# Created on 2017-11-29T14:55:49.100
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:49.104
+Unexpected IOException with stream: c
+
+# Created on 2017-11-29T14:55:49.107
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:49.111
+Unexpected IOException with stream: l
+
+# Created on 2017-11-29T14:55:49.114
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.118
+Unexpected IOException with stream: c
+
+# Created on 2017-11-29T14:55:49.121
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:49.124
+Unexpected IOException with stream: n
+
+# Created on 2017-11-29T14:55:49.128
+Unexpected IOException with stream: n
+
+# Created on 2017-11-29T14:55:49.131
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:49.135
+Unexpected IOException with stream: c
+
+# Created on 2017-11-29T14:55:49.138
+Unexpected IOException with stream: t
+
+# Created on 2017-11-29T14:55:49.141
+Unexpected IOException with stream: i
+
+# Created on 2017-11-29T14:55:49.145
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:49.148
+Unexpected IOException with stream: n
+
+# Created on 2017-11-29T14:55:49.151
+Unexpected IOException with stream: s
+
+# Created on 2017-11-29T14:55:49.155
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.158
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:49.162
+Unexpected IOException with stream: r
+
+# Created on 2017-11-29T14:55:49.166
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:49.169
+Unexpected IOException with stream:  
+
+# Created on 2017-11-29T14:55:49.173
+Unexpected IOException with stream: a
+
+# Created on 2017-11-29T14:55:49.177
+Unexpected IOException with stream: l
+
+# Created on 2017-11-29T14:55:49.181
+Unexpected IOException with stream: l
+
+# Created on 2017-11-29T14:55:49.184
+Unexpected IOException with stream: o
+
+# Created on 2017-11-29T14:55:49.188
+Unexpected IOException with stream: w
+
+# Created on 2017-11-29T14:55:49.192
+Unexpected IOException with stream: e
+
+# Created on 2017-11-29T14:55:49.195
+Unexpected IOException with stream: d
+
+# Created on 2017-11-29T14:55:49.199
+Unexpected IOException with stream: .
+
+# Created on 2017-11-29T14:55:49.203
+Unexpected IOException with stream: 
+
+# Created on 2017-11-29T14:55:49.207
+Unexpected IOException with stream: 
+
+
+# Created on 2017-11-29T14:55:50.545
+Unexpected IOException with stream: Nov 29, 2017 2:55:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+
