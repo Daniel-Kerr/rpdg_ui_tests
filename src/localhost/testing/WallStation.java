@@ -419,14 +419,14 @@ public class WallStation {
 			action4.perform();
 			Thread.sleep(1000);
 			assertEquals(driver.findElement(By.xpath("//div[@id='fix1']/div/div[2]/div[4]/div[2]/label")).getText(), "48");
-			/*myScreen = new Screen();
+			myScreen = new Screen();
 			Pattern p1 = new Pattern("..\\rpdg_ui_tests\\Selenium\\Sikuli\\rgbwdim.jpg");
 			myScreen.wait(p1, 1);
 			myScreen.click(p1);
 			Thread.sleep(1000);
 			assertEquals(driver.findElement(By.xpath("//*[@id='fix1']/div/div[2]/div[1]/div[2]/label")).getText(), "44");
 		    assertEquals(driver.findElement(By.xpath("//*[@id='fix1']/div/div[2]/div[2]/div[2]/label")).getText(), "0");
-		    assertEquals(driver.findElement(By.xpath("//*[@id='fix1']/div/div[2]/div[3]/div[2]/label")).getText(), "28");*/
+		    assertEquals(driver.findElement(By.xpath("//*[@id='fix1']/div/div[2]/div[3]/div[2]/label")).getText(), "28");
 			
 			driver.findElement(By.id("Test_FIX_ON_OFF")).click();
 			driver.findElement(By.cssSelector("span.switchery.switchery-default")).click();
